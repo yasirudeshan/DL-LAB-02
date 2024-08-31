@@ -1,0 +1,11 @@
+1. What happens when the number of hidden nodes increase?
+
+When the number of hidden nodes in a neural network increases, the model gains more capacity to learn from the data. This typically allows the network to capture more complex patterns and relationships within the data, leading to better performance on the training set. However, this also increases the risk of overfitting, where the model learns the noise in the training data rather than the underlying patterns, resulting in poorer performance on unseen data (the test set).
+
+
+2. Can you explain the pattern of the accuracy when the hidden nodes increase?
+
+For 1 and 2 hidden units, the accuracy is relatively low (67.5% and 67.25% respectively). This indicates that the model is too simple and lacks the capacity to capture the underlying patterns in the data, leading to underfitting.
+For 3 to 5 hidden units, there is a significant increase in accuracy (90.75% to 91.25%). This suggests that the model has enough capacity to learn the necessary patterns without overfitting.
+For 20 and 50 hidden units, the accuracy slightly decreases (90.5% and 90.25%). This could indicate that the model might be starting to overfit, as it has more capacity than needed for the given data, capturing noise along with the actual patterns.
+The pattern indicates that there is an optimal range of hidden units for this particular dataset, where the model is complex enough to capture the important patterns but not so complex that it overfits the data. In this case, having 3 to 5 hidden units seems to be optimal.
